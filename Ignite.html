@@ -15,7 +15,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300&display=swap" rel="stylesheet">
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>
+        AOS.init({
+            duration: 1200,
+        })
+    </script>
+    <!-- <script>
+        var name = prompt("What is your name ??");
+        alert("Hi " + name + ",Welcome to Here");
+    </script> -->
+
 </head>
 
 <body>
@@ -27,7 +37,8 @@
     <!-- nav chalu -->
     <nav class="navbar navbar-expand-lg bg-body-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="Ceramic-nav.png" alt="" class="img-1" height="60" width="200px"></a>
+            <a class="navbar-brand" href="#"><img src="Ceramic-nav.png" alt="" class="img-1" height="60"
+                    width="200px"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -53,7 +64,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="Drp-1">
+                <!-- <div class="Drp-1">
                     <div class="dropdown">
                         <button class="btn btn dropdown-toggle" type="button" id="dropdownMenuButton2"
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -63,27 +74,62 @@
                             <li><a class="dropdown-item " href="#">English</a></li>
                             <li><a class="dropdown-item" href="#">Hindi</a></li>
                             <li><a class="dropdown-item" href="#">Gujarati</a></li>
+                        </div>
+                    </div> -->
 
-                        </ul>
-                    </div>
-                </div>
-                <!-- <div style="color: orange;">
-                    <button class="btn btn-danger rounded-0" type="submit">Get a Quote</button>
-                </div> -->
+
                 <div class="button-3">
-                    <button type="button" class="btn btn rounded-0" style="background-color: rgb(235, 119, 10);">
+                    <button onclick="myFunction()" type="button" class="btn btn rounded-0" style="background-color: rgb(235, 119, 10);">
                         <h6 class="button-4">Get a Quae</h6>
 
                         <link rel="stylesheet" href="https://www.google.co.in/">
                     </button>
                 </div>
+                <!-- google translater -->
+                <div class="translater">
+                    <button type="button" class="btn-1" style="background-color: rgb(235, 119, 10) ">
+                        <div class="translater" id="google_translate_element"></div>
+
+                        <script type="text/javascript">
+                            function googleTranslateElementInit() {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            }
+
+                            function myFunction(){
+                                alert("Your Quet Will Accepted, We See You Soon.")
+                            }
+
+                            
+                        </script>
+
+                        <script type="text/javascript"
+                            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+                        </ul>
+                </div>
             </div>
+
+            <div id="google_translate_element"></div>
+
+            <!-- function which will translate the web page using google translator -->
+
+            <script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement(
+                        { pageLanguage: 'en' },
+                        'google_translate_element'
+                    );
+                }  
+            </script>
+            </button>
         </div>
+
     </nav>
     <!-- <img src="ignite-starting.png" alt="" width="1450px" class="img-3"> -->
     <div class="img">
-    <h2 class="Line-11" style="color: aliceblue;">INDIA’S LEADING <br> LUXURIES TILES <br>
-        MANUFACTURER</h2></div>
+        <h2 class="Line-11" style="color: aliceblue;">INDIA’S LEADING LUXURIES <br> TILES
+            MANUFACTURER</h2>
+    </div>
     <!-- <img src="https://photos.wikimapia.org/p/00/06/46/34/42_960.jpg" alt="" height="700" width="1450px" class="img-3 img-fluid"> -->
 
     <div class="row">
@@ -98,28 +144,31 @@
     <div class="container">
         <div class="row">
             <div class="col">
+                <div data-aos="zoom-out-up">
                 <img src="https://images.pexels.com/photos/3316926/pexels-photo-3316926.jpeg?auto=compress&cs=tinysrgb&w=800"
-                    alt="" height="450" width="400px" class="pic-1">
-
+                    alt="" height="450" width="400px" class="pic-1"> </div>
+                    <div data-aos="zoom-out-up">
                 <img src="https://images.pexels.com/photos/8146212/pexels-photo-8146212.jpeg?auto=compress&cs=tinysrgb&w=800"
-                    alt="" height="240" width="400px" class="pic-2">
+                    alt="" height="240" width="400px" class="pic-2"></div>
             </div>
             <div class="col">
+                <div data-aos="zoom-out-up">
                 <img src="https://images.pexels.com/photos/1652544/pexels-photo-1652544.jpeg?auto=compress&cs=tinysrgb&w=800"
-                    alt="" height="230" width="400px" class="pic-3">
-
+                    alt="" height="230" width="400px" class="pic-3"></div>
+                    <div data-aos="zoom-out-up">
                 <img src="https://images.pexels.com/photos/2213495/pexels-photo-2213495.jpeg?auto=compress&cs=tinysrgb&w=800"
-                    alt="" height="230" width="400px" class="pic-4">
-
+                    alt="" height="230" width="400px" class="pic-4"></div>
+                    <div data-aos="zoom-out-up">
                 <img src="https://images.pexels.com/photos/6580403/pexels-photo-6580403.jpeg?auto=compress&cs=tinysrgb&w=800"
-                    alt="" height="230" width="400" class="pic-5">
+                    alt="" height="230" width="400" class="pic-5"></div>
             </div>
             <div class="col">
+                <div data-aos="zoom-out-up">
                 <img src="https://images.pexels.com/photos/601066/pexels-photo-601066.jpeg?auto=compress&cs=tinysrgb&w=800"
-                    alt="" height="230" width="400px" class="pic-6">
-
+                    alt="" height="230" width="400px" class="pic-6"></div>
+                    <div data-aos="zoom-out-up">
                 <img src="https://images.pexels.com/photos/1909656/pexels-photo-1909656.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt="" height="445" width="400px" class="pic-7">
+                    alt="" height="445" width="400px" class="pic-7"></div>
             </div>
         </div>
     </div>
@@ -128,6 +177,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
+                <div data-aos="fade-right">
                 <h2>ABOUT <BR> CERAMICA MOSAIC</h2>
                 <p class="co-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic deleniti possimus <br>
                     illo fugit velit
@@ -136,12 +186,19 @@
                     voluptates sint ullam <br> optio ipsum consequatur ea tenetur recusandae <br> quam nostrum!
                     Inventore?
                 </p>
+                </div>
+                <div data-aos="fade-right">
                 <a href="#" style="color: black;">About Ignire Ceramic</a>
+                </div>
             </div>
+
             <div class="col">
+                <div data-aos="fade-left">
                 <img src="https://images.pexels.com/photos/4916534/pexels-photo-4916534.jpeg?auto=compress&cs=tinysrgb&w=800"
                     alt="" class="hover-img-1" height="620" width="620px">
+                    </div>
             </div>
+        </div>
         </div>
     </div>
     <!-- <br>
@@ -186,6 +243,7 @@
         <div class="row g-0">
             <div class="col-lg-6 col-lg-6">
                 <div class="co-4" style="background-color: grey;">
+                    <div data-aos="fade-right">
                     <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Totam maiores
                         porro
                         odio numquam magnam, dolor ea <br> voluptatibus aliquid, recusandae, sapiente quis cum corporis
@@ -193,19 +251,22 @@
                         est accusantium ratione quae nostrum beatae alias possimus. <br> Veritatis aspernatur eum
                         excepturi
                         possimus nesciunt bklshsf <br> tenetur, aliquam voluptatem!
-                    </p>
+                    </p></div>
+                    <div data-aos="fade-right">
                     <div class="button-1">
-                        <button type="button" class="btn btn rounded-0"
+                        <button onclick="myFunction" type="button" class="btn btn rounded-0"
                             style="background-color: rgb(235, 119, 10);">REQUEST
                             A CALL
                         </button>
                         <span>or Give A Call On +91 99999 99999</span>
-                    </div>
+                    </div></div>
 
                 </div>
             </div>
             <div class="col-lg-6 col-lg-6">
+                <div data-aos="fade-left">
                 <img src="ignite-aado.png" alt="" class="img-col-6" height="408">
+                </div>
             </div>
         </div>
     </div>
@@ -213,11 +274,14 @@
     <div class="container">
         <div class="row">
             <div class="col">
+                <div data-aos="fade-right">
                 <div>
                     <h2>WHY <br> CERAMICA MOSAIC</h2>
                 </div>
+                </div>
             </div>
             <div class="col">
+                <div data-aos="fade-left">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis <br> neque rem similique vero,
                     perferendis aperiam tempora ducimus iste ipsum <br> voluptatibus sequi fugit ratione reprehenderit
                     in illum mollitia repudiandae autem <br> necessitatibus. Cupiditate possimus cumque doloremque
@@ -230,6 +294,7 @@
                     cupiditate quibusdam, br
                     architecto fuga quam!</p>
             </div>
+            </div>
         </div>
     </div>
 
@@ -239,14 +304,17 @@
         <div class="phota-3">
             <div class="row justify-content-center">
                 <div class="col">
+                    <div data-aos="zoom-in-down">
                     <img src="ignite-col1.png" alt="" class="img-col-1" height="500" width="400px">
-                </div>
+                </div></div>
                 <div class="col">
+                    <div data-aos="zoom-in-down">
                     <img src="ignite-col2.png" alt="" class="img-col-2" height="500" width="400px">
-                </div>
+                </div></div>
                 <div class="col">
+                    <div data-aos="zoom-in-down">
                     <img src="ignite-col3.png" alt="" class="img-col-3" height="500" width="400px">
-                </div>
+                </div></div>
             </div>
         </div>
     </div>
@@ -257,18 +325,24 @@
             <h3 align="center" class="head-3">PRODUCT NAME</h3>
             <div class="row">
                 <div class="col">
+                    <div data-aos="zoom-in-down">
                     <img src="https://images.pexels.com/photos/2924090/pexels-photo-2924090.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                         alt="" class="img-col-4" height="400" width="100%">
+                        </div>
                     <h6 class="head-4">PRODUCT NAME</h6>
                 </div>
                 <div class="col">
+                    <div data-aos="zoom-in-down">
                     <img src="https://images.pexels.com/photos/13088155/pexels-photo-13088155.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                         alt="" class="img-col-4" height="400" width="100%">
+                        </div>
                     <h6 class="head-4">PRODUCT NAME</h6>
                 </div>
                 <div class="col">
+                    <div data-aos="zoom-in-down">
                     <img src="https://images.pexels.com/photos/10637203/pexels-photo-10637203.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                         alt="" class="img-col-4" height="400" width="100%">
+                        </div>
                     <h6 class="head-4">PRODUCT NAME</h6>
                 </div>
             </div>
@@ -276,26 +350,34 @@
             <div class="pic-8">
                 <div class="row">
                     <div class="col">
+                        <div data-aos="zoom-in-down">
                         <img src="https://images.pexels.com/photos/11149812/pexels-photo-11149812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                             alt="" class="img-col-4" height="400" width="100%">
+                            </div>
                         <h6 class="head-4">PRODUCT NAME</h6>
                     </div>
                     <div class="col">
+                        <div data-aos="zoom-in-down">
                         <img src="https://images.pexels.com/photos/1525937/pexels-photo-1525937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                             alt="" class="img-col-4" height="400" width="100%">
+                            </div>
                         <h6 class="head-4">PRODUCT NAME</h6>
                     </div>
                     <div class="col">
+                        <div data-aos="zoom-in-down">
                         <img src="https://images.pexels.com/photos/220152/pexels-photo-220152.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                             alt="" class="img-col-4" height="400" width="100%">
+                            </div>
                         <h6 class="head-4">PRODUCT NAME</h6>
                     </div>
                 </div>
             </div>
 
             <div class="button-2">
-                <button type="button" class="btn btn rounded-0" style="background-color: rgb(235, 119, 10);">
-                    <h6 class="head-2">VIEW ALL</h6>
+                <a href="home1.html" text-decoration="none" class="link-1" style="color: black;">
+                    <button type="button" class="btn btn rounded-0" style="background-color: rgb(235, 119, 10);">
+                        <h6 class="head-2">VIEW ALL</h6>
+                </a>
                 </button>
             </div>
         </div>
@@ -308,6 +390,9 @@
     <div class="container">
 
         <div id="carouselExampleCaptions" class="carousel slide">
+            <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -355,6 +440,7 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
+            </div>
         </div>
     </div>
 
@@ -369,20 +455,28 @@
         <div class="container">
             <div class="row">
                 <div class="col">
+                    <div data-aos="fade-right">
                     <img src="https://images.pexels.com/photos/6585741/pexels-photo-6585741.jpeg?auto=compress&cs=tinysrgb&w=800"
-                        class="card-img-top" alt="..."  height="390" width="210px"> <br><br>
+                        class="card-img-top" alt="..." height="390" width="210px"> <br><br>
+                        </div>
+                        <div data-aos="fade-right">
                     <h4 align="">Topic Goes Here Of Blog</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Saepe mollitia quia voluptate
                         aspernatur. <br> Voluptatibus explicabo assumenda totam excepturi nam, <br> sunt harum, fugit
                         voluptas minima fuga officiis inventore! br Quae, quas qui.</p>
+                        </div>
                 </div>
                 <div class="col">
+                    <div data-aos="fade-left">
                     <img src="https://images.pexels.com/photos/2693810/pexels-photo-2693810.jpeg?auto=compress&cs=tinysrgb&w=800"
-                        class="card-img-top" alt="..."  height="390" width="210px"> <br><br>
+                        class="card-img-top" alt="..." height="390" width="210px"> <br><br>
+                        </div>
+                        <div data-aos="fade-left">
                     <h4 align="">Topic Goes Here Of Blog</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Saepe mollitia quia voluptate
                         aspernatur. <br> Voluptatibus explicabo assumenda totam excepturi nam, <br> sunt harum, fugit
                         voluptas minima fuga officiis inventore! br Quae, quas qui.</p>
+                        </div>
                 </div>
             </div>
         </div>
@@ -405,19 +499,21 @@
                                 <li class="Line-5"> <a href="mailto: ignitemosaic@gmail.com"
                                         style="color: aliceblue;">aaabbbcccc@gmail.com</a></li>
                                 <li class="Line-12">+91 99999 99999 | +91 66666 66666</li>
-                                <li class="Line-6">Terms & conditions Privacy Policy</li>
+                                <li class="Line-6">Terms & conditions <span>                  </span> Privacy Policy</li>
                             </ul>
                         </div>
                         <div class="col-lg-4">
                             <ul type="none">
                                 <h6 class="Line-2">Factory Unit 1</h6>
-                                <li class="Line-7">Lorem ipsum dolor sit amet consectetur adipisicing <br> elit Cupiditate
+                                <li class="Line-7">Lorem ipsum dolor sit amet consectetur adipisicing <br> elit
+                                    Cupiditate
                                     (Guj.) India - 999 666</li>
                             </ul>
 
                             <ul type="none">
                                 <h6 class="Line-8">Factory Unit 2</h6>
-                                <li class="Line-9">Lorem ipsum dolor sit amet consectetur adipisicing <br> elit Cupiditate
+                                <li class="Line-9">Lorem ipsum dolor sit amet consectetur adipisicing <br> elit
+                                    Cupiditate
                                     (Guj.) India - 999 666</li>
                             </ul>
                         </div>
@@ -444,5 +540,14 @@
 
 </body>
 
-</html>
 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>
