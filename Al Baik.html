@@ -1,0 +1,861 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Al-Baik</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" type="img/png" href="arrow_up.png">
+
+    <style>
+        body {
+            font-family: 'Sofia Sans', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .nav-img {
+            margin-left: 80px;
+            margin-right: 200px;
+        }
+
+        .img-1 {
+            position: relative;
+            /* background-image: url("https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/10/q14Ott5Z-ALBaik-dubai-1200x800.jpg"); */
+            /* background-image: url("http://blogs.lt.vt.edu/bit5414/files/2017/10/a.jpg"); */
+            /* background-image: url("https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/h7mdbydhpckjogvxovxd"); */
+            background-image: url('https://images.pexels.com/photos/1600727/pexels-photo-1600727.jpeg?auto=compress&cs=tinysrgb&w=800');
+            background-attachment: fixed;
+            background-size: cover;
+            height: 800px;
+        }
+
+        .head-1 {
+            padding-top: 250px;
+            color: aliceblue;
+            font-weight: 600;
+            font-size: 80px;
+            margin-left: 60px;
+        }
+
+        .head-2 {
+
+            color: aliceblue;
+            font-weight: 400;
+            font-size: 30px;
+            margin-left: 60px;
+        }
+
+        .upper-button:hover {
+            color: #fff;
+        }
+
+        .upper-button {
+            margin-left: 70px;
+        }
+
+        .head-3 {
+            color: #fff;
+            margin-left: 60px;
+            padding-top: 20px;
+        }
+
+        .col-img {
+            padding-top: 30px;
+            padding-bottom: 80px;
+
+        }
+
+        .header-1 {
+            font-weight: 500;
+            font-size: 40px;
+            padding-bottom: 20px;
+            color: rgb(180, 41, 50);
+        }
+
+        .header-2 {
+            font-weight: 400;
+            font-size: 20px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+        }
+
+        .aado-pic {
+            padding-top: 40px;
+            padding-bottom: 0px;
+        }
+
+        .header-3 {
+            padding-top: 30px;
+        }
+
+        .header-4 {
+            padding-top: 60px;
+            margin-left: 60px;
+            /* padding-bottom: 90px; */
+            font-weight: 500;
+            font-size: 50px;
+        }
+
+        .header-5 {
+            color: #fff;
+            font-weight: 400;
+            font-style: 40px;
+            margin-left: 60px;
+            padding-top: 30px;
+            padding-bottom: 50px;
+        }
+
+        .header-6 {
+            padding-top: 50px;
+            font-size: 30px;
+        }
+
+        .Header-7 {
+            margin-left: 700px;
+            padding-top: 200px;
+            font-size: 35px;
+            font-weight: 500;
+            color: #fff;
+        }
+
+        .location-bg {
+            position: relative;
+            /* background-image: url("https://img.freepik.com/premium-vector/fast-food-pattern-doodle-hand-drawn-style-white-background_338906-482.jpg"); */
+            background-image: url("location-bg.png");
+        }
+
+        .location-icon {
+            padding-top: 60px;
+            position: relative;
+            left: 50%;
+            font-size: 60px;
+            color: rgb(180, 41, 50);
+            height: 50px;
+            width: 80px;
+
+        }
+
+
+        .search-bar {
+            margin-left: 100px;
+            margin-right: 100px;
+            padding-bottom: 40px;
+        }
+
+        /* .img:hover {
+            -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+        }
+
+        .img {
+            -webkit-transform: scale(0.3);
+            transform: scale(1);
+        } */
+
+        .card-1 {
+            align-items: center;
+        }
+
+        .row-1 {
+            background-image: url('https://b.zmtcdn.com/data/pictures/8/19603008/c815cd516daac4715b772ebdf81d29a5.jpg');
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        .col-1 {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .bg-pizza-fixed {
+            position: relative;
+            background-attachment: fixed;
+            /* background-repeat: no-repeat;
+            width: 1200%; */
+            /* background-image: url('https://images.pexels.com/photos/2233348/pexels-photo-2233348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); */
+            /* background-image: url('https://images.pexels.com/photos/842519/pexels-photo-842519.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); */
+            background-image: url('https://images.pexels.com/photos/1653877/pexels-photo-1653877.jpeg?auto=compress&cs=tinysrgb&w=800');
+        }
+
+        .row-2 {
+            background-image: url('https://www.al-baik.in/uploads/a74d8f6ee3620b9de0ceb354d1d94c25.jpg');
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        .event-bg-fixed {
+            background-image: url('https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/10/WOb8XNV1-albaikdubaimallfriedchicken_1.jpg');
+            background-attachment: fixed;
+            background-repeat: inherit;
+        }
+
+        .starting-col-2-fixed {
+            background-image: url('https://img.freepik.com/premium-photo/portrait-young-beautiful-hungry-woman-eating-burger-isolated-portrait-student-with-fast-food-red-background-diet-concept_255757-10843.jpg?w=2000');
+            background-attachment: fixed;
+        }
+
+        .customer-review-fixed {
+            background-image: url('https://images.pexels.com/photos/5313361/pexels-photo-5313361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+            background-attachment: fixed;
+
+        }
+
+        .fish-bg-fixed {
+            background-image: url('https://geekrobocook.com/wp-content/uploads/2021/05/Spicy-garlic-chicken-wings.jpg');
+            background-attachment: fixed;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Albaik_logo.png" alt="" class="nav-img"
+                height="80" width="350px">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">AboutUs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active">Franchise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active">Restaurants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="html." class="nav-link active">Gallary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active">Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active">Last News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="img-1">
+        <h2 class="head-1">EXPERIENCE THE <br> TASTE OF MIDDLE EAST</h2>
+        <h3 class="head-2">140+ RESTAURANTS ALL OVER INDIA</h3>
+        <button type="button" class="btn btn-outline-secondary upper-button">Restaurants</button> <span>
+            <button type="button" class="btn btn-outline-secondary upper-button">Our Menu</button>
+        </span>
+        <p class="head-3">www.al-baik.com is the only and original website of AL-BAIK.COM restaurant chain. <br>
+            Beware of any duplicate websites trying to sell franchise with similar names.</p>
+    </div>
+    <div class=" starting-col-2-fixed">
+        <!-- <div class="row">
+            <div class="col">
+                <img src="Al-baik-col.png" alt="" class="col-img" height="350" width="600px">
+            </div>
+            <div class="col">
+                <img src="Al-baik-col.png" alt="" class="col-img" height="350" width="600px">
+            </div>
+        </div> -->
+
+        <marquee behavior="alternate" direction="right">
+        <h1 style="color: #fff; padding-top: 200px; padding-bottom: 200px;" align="center">Al-Baik World Wide</h1>
+    </marquee>
+    </div>
+
+    <div class="container">
+        <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div data-aos="fade-right">
+                        <h2 class="header-1">Our Story</h2>
+                        <div class="header-2">
+                            <p>Started in 2009, AL-BAIK.COM is a major fast-food restaurant <br> chain in India with
+                                140+
+                                restaurants, that primarily sells <br> broasted chicken and shrimp with a variety of
+                                sauces.
+                                We <br> are one of the major consumers of chicken.</p>
+
+                            <p>We are excited to welcome you to a reinvigorated and <br> uniquely experience of hot,
+                                fresh,
+                                great-tasting food, with <br> fast, friendly service, in our comfortable environment.
+                            </p>
+                            <br>
+
+                            <a href="https://www.google.com/" style="color: rgb(180,41,50);">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div data-aos="fade-left">
+                        <img class="aado-pic" src="AL-baik-col-2.png" alt="" height="400" width="600px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="location-bg">
+
+        <i class="fa-solid fa-location-dot location-icon"></i>
+        <h2 style="text-align: center; color: rgb(180,41,50);" class="header-3">Restaurants Locator</h2>
+
+        <h5 style="text-align: center; font-weight: 500;">Enter a city/area name below to find the nearest AL-BAIK.COM
+            restaurant. </h5>
+        <div class="container">
+            <div class="search-bar">
+                <div class="form-group mb-md-3 mb-0" style="position:relative!important;">
+                    <input type="text" id="restaurant_search" onkeyup="getRestaurants()"
+                        class="form-control form-control-lg" placeholder="Search restaurant">
+                    <div id="restaurantlist" class="dropdown-menu w-100" role="menu" style="padding:0px!important">
+                        <div id="restaurantlistin"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> -->
+    <div class="container">
+        <div class="row row-1">
+            <div class="col col-1">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.852873697049!2d72.51183245062336!3d22.992437084894643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9be0e5d89811%3A0x43913d1f0942e92d!2sAL-BAIK%20FAST%20FOOD!5e0!3m2!1sen!2sin!4v1677660913427!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="col">
+                <h4 class="Header-7">Here The Most Delicious And Healthy <br> <span
+                        style="color: aquamarine;">HALAL</span>
+                    Food In Your City <br> Ahmedabad.</h4>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h2 style="color: rgb(180,41,50); padding-top: 30px; padding-bottom: 30px;">WHAT'S NEW IN THE MENU</h2>
+            <div class="row">
+                <div class="col">
+                    <div data-aos="zoom-in-down">
+                    <img src="https://www.al-baik.in/img/menu/chicken-sandwich.jpg" alt="" class="img" height="300"
+                        width="400px">
+                        </div>
+                    <h4 style="padding-top: 20px; padding-bottom: 50px;">chicken-sandwich</h4>
+                </div>
+
+                <div class="col">
+                    <div data-aos="zoom-in-down">
+                    <img src="https://www.al-baik.in/img/menu/strip.jpg" alt="" class="img" height="300" width="400px">
+                    </div>
+                    <h4 style="padding-top: 20px; padding-bottom: 50px;">Bonless chicken Strips
+                    </h4>
+                </div>
+                <div class="col">
+                    <div data-aos="zoom-in-down">
+                    <img src="https://www.al-baik.in/img/menu/fried.jpg" alt="" class="img" height="300" width="400px">
+                    </div>
+                    <h4 style="padding-top: 20px; padding-bottom: 50px;">Crispy Fried chicken</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row bg-pizza-fixed">
+            <h2 class="header-4" style="color: #fff;">Introducing our all <br> new Chicken Pizza <br> with your
+                Favorite <br>
+                Toppings</h2>
+            <h4 class="header-5">Visit an AL-BAIK.COM restaurant near you to <br> try now!</h4>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="container">
+        <h1 class="header-6" style="color:  rgb(180,41,50);">New Opening</h1>
+        <p style="font-size: 20px;">Check out our newly opened Restaurant in Vasai West, Maharashtra</p>
+
+        <div class="row">
+            <div class="col">
+                <div data-aos="zoom-in-down">
+                <img src="https://www.al-baik.in/uploads/132/1.jpg" alt="" height="300" width="300px">
+                </div>
+            </div>
+            <div class="col">
+                <div data-aos="zoom-in-down">
+                <img src="https://www.al-baik.in/uploads/132/2.jpg" alt="" height="300" width="300px">
+                </div>
+            </div>
+            <div class="col">
+                <div data-aos="zoom-in-down">
+                <img src="https://www.al-baik.in/uploads/132/2.jpg" alt="" height="300" width="300px">
+                </div>
+            </div>
+            <div class="col">
+                <div data-aos="zoom-in-down">
+                <img src="https://www.al-baik.in/uploads/132/4.jpg" alt="" height="300" width="300px">
+                </div>
+            </div>
+        </div>
+
+
+        <h1 class="header-6" style="color:  rgb(180,41,50);">LATEST NEWS & EVENTS</h1>
+
+        <!-- <div class="row">
+            <div class="col-lg-6">
+                <img src="https://www.al-baik.in/uploads/277cd8d20a5415e0758d1d86faff3a48.jpg" alt="" height="350" width="600px">
+            </div>
+
+            <div class="col-lg-6">
+                <p style="padding-top: 65px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, aliquid dolore debitis delectus laborum cum repellat ex iusto. Veniam ea sint dicta accusamus voluptatibus enim, similique quaerat ut commodi fugiat earum sed perferendis accusantium incidunt, aut dolores tempora quam, ipsum nemo vitae? Tempore quis sapiente consequatur harum non reiciendis minima maiores nemo laudantium magni veritatis totam consequuntur ab eos, consectetur maxime pariatur quisquam, ipsam repudiandae quia facilis obcaecati quibusdam facere?</p>
+            </div>
+        </div>
+
+        <div class="row" style="padding-top: 50px;">
+            <div class="col-lg-6">
+                <p style="padding-top: 65px;">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Perferendis,  <br> dolore debitis delectus laborum cum repellat <br> ex iusto. Veniam ea sint dicta <br> accusamus voluptatibus enim, similique quaerat <br> ut commodi fugiat earum sed perferendis <br> accusantium incidunt, aut dolores tempora quam, <br> ipsum nemo vitae? Tempore quis sapiente <br> consequatur harum non reiciendis minima maiores nemo <br> laudantium magni veritatis totam consequuntur <br> ab eos, consectetur maxime pariatur quisquam, <br> ipsam repudiandae quia facilis obcaecati <br> quibusdam facere?</p>
+            </div>
+
+            <div class="col-lg-6">
+                <img src="https://www.al-baik.in/uploads/5d0ce5cdca4aa1d3c2a92228fb581b45.jpg" alt="" height="350" width="600px">
+            </div>
+        </div>
+
+        <div class="row" style="padding-top: 30px;">
+            <div class="col-lg-6">
+                <img src="https://www.al-baik.in/uploads/c2e134b0779f65c33ae408f13c4f3245.jpg" alt="" height="350" width="600px">
+            </div>
+
+            <div class="col-lg-6">
+                <p style="padding-top: 65px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, aliquid dolore debitis delectus laborum cum repellat ex iusto. Veniam ea sint dicta accusamus voluptatibus enim, similique quaerat ut commodi fugiat earum sed perferendis accusantium incidunt, aut dolores tempora quam, ipsum nemo vitae? Tempore quis sapiente consequatur harum non reiciendis minima maiores nemo laudantium magni veritatis totam consequuntur ab eos, consectetur maxime pariatur quisquam, ipsam repudiandae quia facilis obcaecati quibusdam facere?</p>
+            </div>
+        </div> -->
+        <div class="event-bg-fixed">
+            <div data-aos="fade-right">
+                <div class="row">
+                    <div class="col" style="margin-left: 50px; padding-top: 20px;">
+                        <div class="card-3">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="https://content.jdmagicbox.com/comp/bihar-sharif/c6/9999p6112.6112.181214155247.a4c6/catalogue/al-baik-biharsharif-bihar-sharif-restaurants-jui4xce167.jpg"
+                                            class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title" style="color: rgb(180,41,50);">Get Al-Baik's
+                                                Information
+                                            </h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a
+                                                natural
+                                                lead-in to
+                                                additional content. This content is a little bit longer.</p>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                    ago</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div data-aos="fade-left">
+                    <div class="col" style="margin-left: 700px; padding-top: 20px;">
+                        <div class="col">
+                            <div class="card-3">
+                                <div class="card mb-3" style="max-width: 540px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="https://content.jdmagicbox.com/comp/bihar-sharif/c6/9999p6112.6112.181214155247.a4c6/catalogue/al-baik-biharsharif-bihar-sharif-restaurants-jui4xce167.jpg"
+                                                class="img-fluid rounded-start" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title" style="color: rgb(180,41,50);">Get Al-Baik's
+                                                    Information </h5>
+                                                <p class="card-text">This is a wider card with supporting text below as
+                                                    a
+                                                    natural
+                                                    lead-in to
+                                                    additional content. This content is a little bit longer.</p>
+                                                <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                        ago</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div data-aos="fade-right">
+                    <div class="col" style="margin-left: 50px;">
+                        <div class="col">
+                            <div class="card-3">
+                                <div class="card mb-3" style="max-width: 540px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="https://content.jdmagicbox.com/comp/bihar-sharif/c6/9999p6112.6112.181214155247.a4c6/catalogue/al-baik-biharsharif-bihar-sharif-restaurants-jui4xce167.jpg"
+                                                class="img-fluid rounded-start" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title" style="color: rgb(180,41,50);">Get Al-Baik's
+                                                    Information </h5>
+                                                <p class="card-text">This is a wider card with supporting text below as
+                                                    a
+                                                    natural
+                                                    lead-in to
+                                                    additional content. This content is a little bit longer.</p>
+                                                <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                        ago</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="container"> -->
+        <!-- <div class="row row-2">
+                <h1 style="color: #fff; font-size: 35px; font-weight: 500; padding-top: 500px; padding-bottom: 500px;">
+                    Recently A Very Femous <br></h1>
+            </div> -->
+        <!-- <video width="320" height="240" controls>
+                <source src="movie.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+              </video>
+        
+        <div>
+            <h1 style="padding-top: 20px; padding-bottom: 20px;"></h1>
+        </div>
+        <div class="row row-3">
+            <h1 style="color: #fff; font-size: 35px; font-weight: 500; padding-top: 500px; padding-bottom: 500px;">
+                Recently A Very Femous <br></h1>
+        </div>
+    </div>
+    </div> -->
+
+
+        <!-- HACHU AL BAIK JEVU J -->
+        <!-- <div class="container">
+        <div class="row">
+            <div class="col">
+                <p class="mb-0 text-dark"><strong style="background-color: bisque">New AL-BAIK.COM is opening soon in
+                        <br> Qazi Tola, Kannauj, 140+ Franchise <br> Stores in India now</strong></p>
+            </div>
+
+            <div class="col">
+                <p><strong style="background-color: bisque;">
+                        Live Concert with Shirley Setia on <br> 6th August at Bhopal
+                    </strong></p>
+            </div>
+
+            <div class="col">
+                <p><strong style="background-color: bisque;">
+                        A glimpse of our brand new al- <br> baik.com store at Nashik <br> Maharastra.
+                    </strong></p>
+            </div>
+        </div>
+    </div> -->
+        <!-- HACHU AL BAIK JEVU J -->
+
+        <h1 class="header-6" style="color:  rgb(180,41,50); padding-top: 80px; padding-bottom: 20px;">CUSTOMER REVIEWS
+        </h1>
+        <div class="container customer-review-fixed">
+            <!-- <h1 style="color:  rgb(180,41,50); padding-top: 200px; padding-bottom: 200px;"> f </h1> -->
+            <!-- <img src="happy_consumer.jpeg" alt="" height="1850" width="400px" style="position: absolute;"> -->
+
+            <h1 class="consumer" style="color: rgb(180,41,50); margin-left: 500px; padding-bottom: 70px;">We've More
+                Happy
+                Customer World Wide.</h1>
+
+            <!-- <h1 class="consumer" style="color: #fff; margin-left: 500px; padding-bottom: 200px;">Here The Some Response Of Our Consumer.</h1> -->
+            <div data-aos="zoom-in-right">`
+                <div class="card card-1" style="width: 18rem; margin-left: 500px;">
+                    <img src="https://i0.wp.com/youthclub.pk/wp-content/uploads/2021/07/P1200021-copy6.jpg?fit=768%2C768&ssl=1"
+                        class="card-img-top" alt="..." height="300">
+                    <div class="card-body">
+                        <p class="card-text">An Amazing Test And Quality Of Course. Must Try A Delisious HALAL Food
+                            Once.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div data-aos="zoom-in-left">
+                <div class="card card-1" style="width: 18rem; margin-left: 900px;">
+                    <img src="https://i0.wp.com/youthclub.pk/wp-content/uploads/2022/10/abusad-768x768.jpg?fit=768%2C768&ssl=1"
+                        class="card-img-top" alt="..." height="300">
+                    <div class="card-body">
+                        <p class="card-text">An Amazing Test And Quality Of Course. Must Try A Delisious HALAL Food
+                            Once.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="zoom-in-right">`
+                <div class="card card-1" style="width: 18rem; margin-left: 500px;">
+                    <img src="https://hamariweb.com/profiles/images/profile/4722-478-7177.jpg" class="card-img-top"
+                        alt="..." height="300">
+                    <div class="card-body">
+                        <p class="card-text">An Amazing Test And Quality Of Course. Must Try A Delisious HALAL Food
+                            Once.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div data-aos="zoom-in-left">
+                <div class="card card-1" style="width: 18rem; margin-left: 900px;">
+                    <img src="https://i.playboard.app/p/AMLnZu_Toyle6jxtMTUMRdMjoe78FkHNtNVOGTDwZNHQgg/default.jpg"
+                        class="card-img-top" alt="..." height="300">
+                    <div class="card-body">
+                        <p class="card-text">An Amazing Test And Quality Of Course. Must Try A Delisious HALAL Food
+                            Once.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <br><br><br>
+    <div class="container">
+        <h2 style="color: rgb(180,41,50);">Are You Keep searching Best Chicken Dishes, Restaurants Near You??
+            etc...Checkout <br> Nearest Al-Baik.Com Restaurants Now</h2>
+        <div data-aos="fade-right">
+            <h3 style="font-size: 30px; font-weight: 450;">Al-Baik.Com: The Best Outlet for Delicious Chicken Dishes
+            </h3>
+            <p style="font-size: 20px;">At Al-Baik.Com, we serve the best chicken dishes near you.! From crispy fried
+                bites
+                to succulent grilled dishes, you're sure to find something delicious. Try us out today!</p>
+        </div>
+
+        <div data-aos="fade-right">
+        <h3 style="font-size: 30px; font-weight: 450;">Learn About Our Menu Options.</h3>
+        <p style="font-size: 18px;">Our menu offers a wide variety of delicious chicken dishes that cater to
+            virtually
+            any palate! From classic fried options with our signature Al-Baik flavor, to <br> grilled recipes full
+            of
+            fragrant spices, you'll be sure to find something that's perfect for your taste buds. We also offer
+            healthy
+            vegan alternatives for those <br> looking for healthier fare. Come explore our menu today and discover
+            all
+            that Al-Baik has to offer!</p>
+</div>
+<div data-aos="fade-right">
+        <h3 style="font-size: 30px; font-weight: 450;">Try Mouthwatering Specialties.</h3>
+        <p style="font-size: 18px;">Al-Baik offers an array of mouthwatering specialties you won't find anywhere
+            else.
+            Try our signature Fried Chicken, which has been marinated in a carefully <br> crafted mix of herbs,
+            spices
+            and our special Al-Baik flavorings. For those looking for a seriously indulgent meal, we offer our
+            Crispy &
+            Tender Jumbo Platter <br> with six pieces of juicy fried chicken accompanied by sides like garlic sauce
+            and
+            tabbouleh salad. And for the health conscious diners, try our Grilled Chicken <br> Breast and Kebab
+            dishes
+            for lower-calorie options full of Flavor.</p>
+            </div>
+            <div data-aos="fade-right">
+        <h3 style="font-size: 30px; font-weight: 450;">Enjoy Affordable Prices.</h3>
+        <p style="font-size: 18px;">At Al-Baik.Com, we serve up delicious chicken dishes at affordable prices. Our
+            signature dishes are all reasonably priced and will leave you feeling full and <br> satisfied with our
+            uniquely flavorful options. So come in today and experience deliciously cooked meals any day of the
+            week—no
+            matter what your budget is!</p>
+            </div>
+            <div data-aos="fade-right">
+        <h3 style="font-size: 30px; font-weight: 450;">Take Advantage of Meal Deals.</h3>
+        <p style="font-size: 18px;">Delicious meals don't have to be expensive at Al-Baik.Com! Take advantage of our
+            meal deals that cater to all kinds of customers, from large groups looking <br> for a feast to bargain
+            seekers who want a full meal without breaking the bank. With affordable prices and a wide selection of
+            meal
+            deals, you're sure to get <br> great value for your money!</p>
+            </div>
+            <div data-aos="fade-right">
+        <h3 style="font-size: 30px; font-weight: 450;">Enjoy Great Customer Service.</h3>
+        <p style="font-size: 18px;">At Al-Baik.Com, we go the extra mile to ensure that you have a satisfying
+            experience
+            with us. Our friendly staff are on hand to answer any questions you may <br> have and provide help
+            whenever
+            needed. From helping you choose the right meal deal for your party size to providing efficient delivery
+            services, we make <br> sure you get exactly what you're looking for!</p>
+</div>
+
+        <div class="row fish-bg-fixed">
+            <div data-aos="zoom-in">
+            <h1 style="padding-top: 40px; margin-left: 400px; color: #fff; font-size: 50px; font-weight: 400;">
+                Franchise
+                with us</h1>
+            <p style="margin-left: 400px; font-size: 25px; font-weight: 300; color: #fff;">Want to be a part of the
+                AL-BAIK.COM family? <br> Become a link in our exciting chain of craft chicken <br> by franchising
+                with
+                us! Discover the thriving taste of <br> the middle east and build up strong relationships, <br>
+                reinforced by customer loyalty for India largest <br> growing fast food chain and its long
+                established
+                <br> identity of offering steadfast quality and service.
+            </p>
+
+            <p style="margin-left: 400px; font-size: 25px; font-weight: 300; color: #fff;">Come be a part of the
+                ever-growing AL-BAIK.COM <br> family!</p>
+        </div>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <!-- <footer style="background-color: rgb(180,41,50);">
+        <div class="row">
+            <div class="col-lg-4">
+                <h4 style="color: white; margin-left: 60px; font-size: 30px; padding-top: 40px; padding-bottom: 10px;">
+                    QUICK LINKS</h4>
+                <li
+                    style="list-style-type: none; color: #fff; margin-left: 60px; font-size: 20px; padding-bottom: 7px;">
+                    Home</li>
+                <li
+                    style="list-style-type: none; color: #fff; margin-left: 60px; font-size: 20px; padding-bottom: 7px;">
+                    Get Frenchise</li>
+                <li
+                    style="list-style-type: none; color: #fff; margin-left: 60px; font-size: 20px; padding-bottom: 7px;">
+                    Latest News</li>
+                <li
+                    style="list-style-type: none; color: #fff; margin-left: 60px; font-size: 20px; padding-bottom: 300px;">
+                    FAQ</li>
+            </div>
+            <div class="col-lg-4">
+                <li style="color: #fff; font-size: 20px; padding-top: 65px;">About Us</li>
+                <li>Our Menu</li>
+                <li>Restaurants</li>
+                <li>customer review</li>
+                <li>Contact Us</li>
+            </div>
+
+            <div class="col-lg-4">
+                <li style="color: #fff; font-size: 20px; padding-top: 65px;">About Us</li>
+                <li>Our Menu</li>
+                <li>Restaurants</li>
+                <li>customer review</li>
+                <li>Contact Us</li>
+            </div>
+
+            <div class="col-lg-4">
+                <li style="color: #fff; font-size: 20px; padding-top: 65px;">About Us</li>
+                <li>Our Menu</li>
+                <li>Restaurants</li>
+                <li>customer review</li>
+                <li>Contact Us</li>
+            </div>
+        </div>
+        </div>
+
+    </footer> -->
+
+    <footer class="py-md-5 py-3 another">
+        <!-- <div class="container"> -->
+        <div class="row" style="background-color: rgb(180, 41, 50); padding-bottom: 90px;">
+            <div class="col-md-4 mb-md-0 mb-5">
+                <h4 style="font-size: 30px; color: #fff; padding-top: 40px; margin-left: 80px;">Quick Links</h4>
+                <hr>
+                <div class="row" style="margin-left: 60px;">
+                    <div class="col-md-6 mb-2"><a href="/" style="color: #fff;">Home</a></div> <br>
+                    <div class="col-md-6 mb-2"><a href="/about" style="color: #fff;">About Us</a></div> <br>
+                    <div class="col-md-6 mb-2"><a href="/franchise" style="color: #fff;">Get Franchise</a></div>
+                    <br>
+                    <!-- <div class="col-md-6 mb-2"><a href="https://www.al-baik.in/gujarat">Master Franchise(Gujarat)</a></div> -->
+                    <div class="col-md-6 mb-2"><a href="/menu" style="color: #fff;">Our Menu</a></div>
+                    <div class="col-md-6 mb-2"><a href="/gallery" style="color: #fff;">Gallery</a></div>
+                    <div class="col-md-6 mb-2"><a href="/restaurants" style="color: #fff;">Restaurants</a></div>
+                    <div class="col-md-6 mb-2"><a href="/news" style="color: #fff;">Latest News</a></div>
+                    <div class="col-md-6 mb-2"><a href="/reviews" style="color: #fff;">Customer Reviews</a></div>
+                    <div class="col-md-6 mb-2"><a href="/faq" style="color: #fff;">FAQ</a></div>
+                    <div class="col-md-6 mb-2"><a href="/contact" style="color: #fff;">Contact Us</a></div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-5">
+                <h4 style="padding-top: 40px; font-size: 30px; color: #fff;  margin-left: 40px;">Contact Us</h4>
+                <hr>
+                <p class="mb-2" style="color: #fff;  margin-left: 40px;">B4/186 Vishal Khand-4, Gomti Nagar<br>Lucknow, Uttar Pradesh
+                </p>
+                <br>
+                <div style=" margin-left: 40px;">
+                <p class="mb-2"><a href="tel:+91-9389124699" style="color: #fff;">
+                        <i class="fa fa-phone-alt mr-2">
+                        </i>+91-9389124699</a></p> <br>
+                <p class="mb-2"><a href="tel:+91-9450045050" style="color: #fff;"><i
+                            class="fa fa-phone-alt mr-2"></i>+91-9450045050</a></p> <br>
+                <p class="mb-3"><a href="mailto:info@albaiks.com" style="color: #fff;"><i
+                            class="far fa-envelope mr-2"></i>info@al-baik.com</a></p> <br>
+                <!-- <a href="https://www.facebook.com/albaikcom" target="_blank" class="mr-2 fab fa-facebook"></a> <a
+                    href="https://www.instagram.com/albaiks786" target="_blank" class="mr-2 fab fa-instagram"></a>
+                <a href="https://www.youtube.com/channel/UCdW1rxY_YdutjcjvqpgiKJA" target="_blank"
+                    class="mr-2 fab fa-youtube"></a> <a href="https://www.linkedin.com/company/al-baik-com"
+                    target="_blank" class="mr-2 fab fa-linkedin"></a> -->
+                    </div>
+            </div>
+            <div class="col-md-4">
+                <h4 style="padding-top: 40px; font-size: 30px; color: #fff;">International Office</h4>
+                <hr>
+                <p class="mb-2" style="font-size: 20px; color: #fff;">Dubai Office</p>
+                <p class="mb-2"><a href="tel:+971564437833" style="color: #fff;"><i
+                            class="fa fa-phone-alt mr-2"></i>+971564437833</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
